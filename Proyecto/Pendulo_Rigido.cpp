@@ -194,14 +194,16 @@ void Pendulo_Doble_Rigido(vector<double> (*f)(double, vector<double>, double, do
   	datos<<setw(15)<<left<<"x1"<<setw(15)<<"y1"<<setw(15)<<"x2"<<setw(15)<<"y2"<<setw(15)<<"v1x"
   		  <<setw(15)<<"v1y"<<setw(15)<<"v2x"<<setw(15)<<"v2y"<<setw(15)<<"v3x"<<setw(15)<<"v3y"
   		  <<setw(15)<<"v4x"<<setw(15)<<"v4y"<<setw(15)<<"v5x"<<setw(15)<<"v5y"<<setw(15)<<"v6x"
-  		  <<setw(15)<<"v6y"<<setw(15)<<"p2x"<<setw(15)<<"p2y"<<endl;
+  		  <<setw(15)<<"v6y"<<setw(15)<<"p2x"<<setw(15)<<"p2y"<<setw(15)<<"Teta1"<<setw(15)<<"Teta2"
+  		  <<setw(15)<<"Omega1"<<setw(15)<<"Omega2"<<endl;
   		  
 	for (int i = 0; i < n; i++)
    {
    	datos<<setw(15)<<left<<x1[i]<<setw(15)<<y1[i]<<setw(15)<<x2[i]<<setw(15)<<y2[i]<<setw(15)<<v1x[i]
   		  <<setw(15)<<v1y[i]<<setw(15)<<v2x[i]<<setw(15)<<v2y[i]<<setw(15)<<v3x[i]<<setw(15)<<v3y[i]
   		  <<setw(15)<<v4x[i]<<setw(15)<<v4y[i]<<setw(15)<<v5x[i]<<setw(15)<<v5y[i]<<setw(15)<<v6x[i]
-  		  <<setw(15)<<v6y[i]<<setw(15)<<p2x[i]<<setw(15)<<p2y[i]<<endl;
+  		  <<setw(15)<<v6y[i]<<setw(15)<<p2x[i]<<setw(15)<<p2y[i]<<setw(15)<<Y[0][i]<<setw(15)<<Y[2][i]
+  		  <<setw(15)<<Y[1][i]<<setw(15)<<Y[3][i]<<endl;
 	}
    
    datos.close();
